@@ -9,5 +9,15 @@ provider:
   runtime: nodejs14.x
 
 functions:
-  hello:
+  getProducts:
     handler: handler.get
+    url: true
+    environment :
+      DB_HOST : '127.0.0.1'
+      DB_PORT : '3306'
+      DB_DATABASE : 'bagisto_db'
+      DB_USERNAME : 'root'
+      DB_PASSWORD : 'P@ssw0rds2'
+      LARAVEL_API_KEY : '/QnjJkDKJJKcAmfo5scPCGbMjJtwEz7rKjIjGWrrjoU='
+
+
