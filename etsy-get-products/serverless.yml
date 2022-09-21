@@ -19,7 +19,8 @@ functions:
       DB_USERNAME : 'root'
       DB_PASSWORD : 'P@ssw0rds2'
       LARAVEL_API_KEY : 'Px4O9kOtYzcia9Rwnfd26qzS3UgWoimiD6RChawabB0='
-      ETSY_API_KEY : '7wmu7x0ox143h617866g79jv'
+      ETSY_API_KEY : ${param:ETSY_KEY}
+      STORE_ID : ${param:store_id}
       
 
 
